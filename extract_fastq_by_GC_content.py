@@ -6,7 +6,7 @@ from Bio import  SeqUtils
 
 # defining the arguments that need to be passed to the script
 arguments = OptionParser()
-arguments.add_option('-f', '--file', dest='file', help='input csv file')
+arguments.add_option('-f', '--file', dest='file', help='input fastq file')
 arguments.add_option('-r', '--range', dest='range', help='range of mean GC content for which to extract reads, range is between 0 and 1')
 arguments.add_option('-o', '--output', dest='output', help='output name, has to be in fastq format')
 (options, args) = arguments.parse_args()
